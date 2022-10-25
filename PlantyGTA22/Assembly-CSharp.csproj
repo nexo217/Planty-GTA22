@@ -58,21 +58,21 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Plant.cs" />
     <Compile Include="Assets\Scripts\EarnPlant.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\HeadBob.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\ItemChange.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\HandsHolder.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\MovementEffects.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\ColliderEvent.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\MENU.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\HandsSmooth.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\TextWriter.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\ItemChange.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\HandsHolder.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\MovementEffects.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\ColliderEvent.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\MENU.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\HandsSmooth.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\TextWriter.cs" />
     <Compile Include="Assets\Scripts\PlacePlant.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
-    <Compile Include="Assets\EvolveGames\RealisticFPSController\Scripts\Viewpoint.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\EvolveGames\RealisticFPSController\Documentation.txt" />
+    <None Include="Assets\Controler\RealisticFPSController\Documentation.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
