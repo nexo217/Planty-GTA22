@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\PlacePlant.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
+    <Compile Include="Assets\Scripts\Watering.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Controler\RealisticFPSController\Documentation.txt" />

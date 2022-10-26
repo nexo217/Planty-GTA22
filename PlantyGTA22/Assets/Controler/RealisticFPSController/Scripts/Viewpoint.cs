@@ -6,7 +6,7 @@ using UnityEngine.UI;
     public class Viewpoint : MonoBehaviour
     {
         [Header("Viewpoint")]
-        [SerializeField] string PointText = "Press E";
+        public string PointText;
         [Space, SerializeField] Camera cam;
         [SerializeField] GameObject PlayerController;
         [SerializeField] Image ImagePrefab;
@@ -21,14 +21,15 @@ using UnityEngine.UI;
             PlayerController = GameObject.Find("PlayerController");
             ImageUI = Instantiate(ImagePrefab, FindObjectOfType<Canvas>().transform).GetComponent<Image>();
             ImageText = ImageUI.GetComponentInChildren<Text>();
-            ImageText.text = PointText;
         }
         void Update()
         {
             ImageUI.transform.position = cam.WorldToScreenPoint(calculateWorldPosition(transform.position, cam));
             Distance = Vector3.Distance(PlayerController.transform.position, transform.position);
+            ImageText.text = PointText;
 
-            if(Distance < MaxTextViewRange)
+
+        if (Distance < MaxTextViewRange)
             {
                 Color OpacityColor = ImageText.color;
                 OpacityColor.a = Mathf.Lerp(OpacityColor.a, 1, 10 * Time.deltaTime);

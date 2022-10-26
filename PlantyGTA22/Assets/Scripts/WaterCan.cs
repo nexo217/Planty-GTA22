@@ -9,17 +9,17 @@ public class WaterCan : MonoBehaviour
 
     GameObject WaterFx;
     bool instantiated;
+    public bool watering;
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(CameraHolder.transform.localRotation.x);
-
         if (CameraHolder.transform.localRotation.x > 0.3)
         {
             if (!instantiated)
             {
                 WaterFx = Instantiate(WaterPS, transform);
+                watering = true;
                 instantiated = true;
             }
         }
@@ -30,6 +30,7 @@ public class WaterCan : MonoBehaviour
                 WaterFx.transform.SetParent(null);
                 WaterFx.GetComponent<ParticleSystem>().Stop();
                 Destroy(WaterFx, 5);
+                watering = false;
                 instantiated = false;
             }
         }
