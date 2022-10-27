@@ -23,7 +23,13 @@ public class Watering : MonoBehaviour
             if (plant != null && waterCanScript.watering && waterCanScript.gameObject.active)
             {
                     plant.waterGot += 0.001f;
-            }          
+            }
+
+            PlantClone plantClone = hit.GetComponent<PlantClone>();
+            if (plantClone != null && waterCanScript.watering && waterCanScript.gameObject.active)
+            {
+                plantClone.waterGot += 0.001f;
+            }
         }
     }
 
