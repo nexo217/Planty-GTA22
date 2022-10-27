@@ -718,15 +718,22 @@ MonoBehaviour:
   - {fileID: 1939300642140636864}
   - {fileID: 5082416532716210184}
   - {fileID: 1225435212750400500}
-  Fruit: {fileID: 6855198589396340767, guid: 8726c2b8ee297a144a56cb89c0f2efb7, type: 3}
+  FruitPrefab: {fileID: 6855198589396340767, guid: 8726c2b8ee297a144a56cb89c0f2efb7,
+    type: 3}
+  PlantPrefab: {fileID: 7070106045809607801, guid: 40c075b1ed182b349b56ad8d7c584dea,
+    type: 3}
   waterGot: 0
   canEarn: 0
   ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
     type: 3}
-  maxGrowTime: 60
-  fruitCount: 6
-  fruitGrowTime: 20
+  maxGrowTime: 2
+  fruitCount: 2
+  fruitGrowTime: 1
   waterNeeded: 0.5
+  spreadTime: 5.2
+  minspreadRange: 1
+  maxspreadRange: 3
+  spreadCount: 2
 --- !u!65 &5916156277353746887
 BoxCollider:
   m_ObjectHideFlags: 0

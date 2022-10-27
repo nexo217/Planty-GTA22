@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
     public GameObject[] PlantsTypes;
     public GameObject[] Spawnpoints;
-    public GameObject Fruit;
+    public GameObject FruitPrefab;
+    public GameObject PlantPrefab;
+    RaycastHit hit;
     int currentType;
     [HideInInspector] public float waterGot;
     bool watered;
@@ -23,10 +26,30 @@ public class Plant : MonoBehaviour
     public int fruitCount;
     public float fruitGrowTime;
     public float waterNeeded;
+    public float spreadTime;
+    public float minspreadRange;
+    public float maxspreadRange;
+    //how many times can spread
+    public int spreadCount;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        //gets to the ground
+        Ray ray = new Ray(transform.position, -Vector3.up);
+
+        Debug.DrawRay(transform.position, Vector3.down * 100, Color.red);
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider != null && hit.collider.tag == "Ground")
+            {
+                float heightAboveGround = hit.distance;
+                transform.localPosition = new Vector3(transform.localPosition.x, -heightAboveGround + 0.1f, transform.localPosition.z);
+            }
+        }
+
         growTimePerType = maxGrowTime / PlantsTypes.Length;
      
         viewpoint = Instantiate(ViewpointPrefab, transform.position, transform.rotation).GetComponent<Viewpoint>();
@@ -36,7 +59,7 @@ public class Plant : MonoBehaviour
 
     private void Update()
     {
-        if(waterGot > waterNeeded && !watered && !watered1)
+        if (waterGot > waterNeeded && !watered && !watered1)
         {
             watered = true;
             watered1 = true;
@@ -47,6 +70,8 @@ public class Plant : MonoBehaviour
             viewpoint.PointText = "Grows";
             watered = false;
         }
+
+        RandomFlipValue();
     }
 
     public void Evolve()
@@ -82,11 +107,55 @@ public class Plant : MonoBehaviour
     {
         for (int i = 0; i < fruitCount; i++)
         {
-            fruit = Instantiate(Fruit, Spawnpoints[i].transform.position, Spawnpoints[i].transform.rotation);
+            fruit = Instantiate(FruitPrefab, Spawnpoints[i].transform.position, Spawnpoints[i].transform.rotation);
             fruits.Add(fruit);
             canEarn = true;
             viewpoint.PointText = "Earn Fruits!";
+            if(i +1 == fruitCount)
+            {
+                Invoke("SpawnPlants", spreadTime);
+                spreadCount -= 1;
+            }
         }
+    }
+
+    void SpawnPlants()
+    {
+        if (spreadCount > 0)
+        {
+            Invoke("SpawnFruits", fruitGrowTime);
+            viewpoint.PointText = "Grows";
+        }
+        for (int i = 0; i < fruitCount; i++)
+        {
+            Vector3 position = transform.position + new Vector3(Random.Range(minspreadRange, maxspreadRange) * randomValue, 0, Random.Range(minspreadRange, maxspreadRange) * randomValue);
+            Quaternion rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+            Instantiate(Resources.Load("Plant1"), position, rotation);
+        }        
+        for (int i = 0; i < fruits.Count; i++)
+        {
+            Destroy(fruits[i]);
+        }  
+    }
+
+
+    int randomValue;
+    void RandomFlipValue()
+    {
+        randomValue = Random.Range(-1, 2);
+        if (randomValue == 0)       
+            return;      
+    }
+
+    private void OnDrawGizmos()
+    {
+        // Draw a red sphere at the transform's position
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, minspreadRange);
+
+        // Draw a red sphere at the transform's position
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, maxspreadRange);
     }
 
 
