@@ -11,11 +11,6 @@ public class PlacePlant : MonoBehaviour
     public bool canPlant;
     public bool canEarn;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
