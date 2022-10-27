@@ -42,7 +42,7 @@ public class Plant : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider != null && hit.collider.tag == "Ground")
+            if (hit.collider.tag == "Ground")
             {
                 float heightAboveGround = hit.distance;
                 transform.localPosition = new Vector3(transform.localPosition.x, -heightAboveGround + 0.1f, transform.localPosition.z);
@@ -145,18 +145,6 @@ public class Plant : MonoBehaviour
         if (randomValue == 0)       
             return;      
     }
-
-    private void OnDrawGizmos()
-    {
-        // Draw a red sphere at the transform's position
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, minspreadRange);
-
-        // Draw a red sphere at the transform's position
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, maxspreadRange);
-    }
-
 
     public void DestroyPlant()
     {

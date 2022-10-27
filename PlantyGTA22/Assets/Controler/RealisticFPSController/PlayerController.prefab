@@ -1261,7 +1261,7 @@ CharacterController:
   m_Height: 2.2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.56
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -2277,6 +2277,21 @@ PrefabInstance:
       propertyPath: CameraHolder
       value: 
       objectReference: {fileID: 4582019823802981678}
+    - target: {fileID: 8010284996945278160, guid: 357bc2a77aab4b848b7d6813d73d74d8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010284997724307022, guid: 357bc2a77aab4b848b7d6813d73d74d8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010284997750674240, guid: 357bc2a77aab4b848b7d6813d73d74d8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8010284997985239048, guid: 357bc2a77aab4b848b7d6813d73d74d8,
         type: 3}
       propertyPath: m_RootOrder
