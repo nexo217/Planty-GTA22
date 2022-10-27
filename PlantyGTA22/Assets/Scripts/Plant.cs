@@ -8,7 +8,6 @@ public class Plant : MonoBehaviour
     public GameObject[] PlantsTypes;
     public GameObject[] Spawnpoints;
     public GameObject FruitPrefab;
-    public GameObject PlantPrefab;
     RaycastHit hit;
     int currentType;
     [HideInInspector] public float waterGot;
