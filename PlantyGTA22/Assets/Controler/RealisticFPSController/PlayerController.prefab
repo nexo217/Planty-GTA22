@@ -1348,10 +1348,10 @@ MonoBehaviour:
   LoopItems: 1
   SeedItemName:
   - Grass
-  - Blume
+  - Flower
   - Big Grass
   - Bush
-  - Efeu
+  - Ivy
   - Tree
   SeedItemLogos:
   - {fileID: 21300000, guid: f03977ec34a65db4dbab43ae24c9f36d, type: 3}

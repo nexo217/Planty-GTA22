@@ -50,5 +50,16 @@ public class WaterCan : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            if (WaterFx != null)
+            {
+                WaterFx.transform.SetParent(null);
+                WaterFx.GetComponent<ParticleSystem>().Stop();
+                Destroy(WaterFx, 5);
+                watering = false;
+                instantiated = false;
+            }              
+        }
     }
 }
