@@ -78,6 +78,8 @@
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Eric\Fog.cs" />
+    <Compile Include="Assets\Scripts\MessageForTeam.cs" />
+    <Compile Include="Assets\Scripts\WaterRefill.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\Shader\Triplanar.shader" />
