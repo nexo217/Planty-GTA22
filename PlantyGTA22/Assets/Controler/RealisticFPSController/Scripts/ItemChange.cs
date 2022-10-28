@@ -34,12 +34,12 @@ namespace EvolveGames
         }
         private void Update()
         {
-            if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 ItemIdInt++;
             }
 
-            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 ItemIdInt--;
             }

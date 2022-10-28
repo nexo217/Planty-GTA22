@@ -5,12 +5,17 @@ using UnityEngine;
 public class PlacePlant : MonoBehaviour
 {
     public LayerMask hitLayer;
-    public GameObject plant;
     public Transform debugTransform;
     public Camera cam;
     public bool canPlant;
     public bool canEarn;
+    Inventory inventory;
 
+
+    private void Start()
+    {
+        inventory = GetComponent<Inventory>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -38,6 +43,6 @@ public class PlacePlant : MonoBehaviour
 
     public void Plant()
     {
-        GameObject Plant = Instantiate(plant, debugTransform.transform.position, debugTransform.transform.rotation);
+        GameObject plant = Instantiate(inventory.SeedItemPrefabs[inventory.SeedItemIdInt], debugTransform.transform.position, debugTransform.transform.rotation);
     }
 }
