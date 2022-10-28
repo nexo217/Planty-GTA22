@@ -526,12 +526,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &57553164 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4434987455181619956, guid: a01c7516e659bdf4b9897ab54df69b69,
-    type: 3}
-  m_PrefabInstance: {fileID: 1683867483}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &58073879
 GameObject:
   m_ObjectHideFlags: 0
@@ -64075,12 +64069,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8462050212037845414, guid: 7bc4238d8272c924d85197c9827c8cc1, type: 3}
---- !u!1 &1345052686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1452507092463252298, guid: a01c7516e659bdf4b9897ab54df69b69,
-    type: 3}
-  m_PrefabInstance: {fileID: 1683867483}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1368908600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74707,63 +74695,10 @@ PrefabInstance:
       propertyPath: SeedItemCanvasText
       value: 
       objectReference: {fileID: 1548407334}
-    - target: {fileID: 1400153138, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
-      propertyPath: Shovel
-      value: 
-      objectReference: {fileID: 1345052686}
-    - target: {fileID: 1400153138, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
-      propertyPath: handAnimator
-      value: 
-      objectReference: {fileID: 57553164}
     - target: {fileID: 1966169855, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
       propertyPath: waterCanSlider
       value: 
       objectReference: {fileID: 2134187958}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434987455181619954, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4434987455403460021, guid: a01c7516e659bdf4b9897ab54df69b69,
         type: 3}
       propertyPath: ItemCanvasLogo
@@ -74828,6 +74763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582019824381016679, guid: a01c7516e659bdf4b9897ab54df69b69,
+        type: 3}
+      propertyPath: m_StepOffset
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
