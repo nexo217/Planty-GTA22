@@ -89,7 +89,7 @@ Material:
     - _HeightBrightness: 0.25
     - _HeightSoftness: 1
     - _HeightSpread: 0.5
-    - _LowPoly: 0
+    - _LowPoly: 1
     - _Metallic: 0
     - _Mode: 0
     - _NormalScale: 1
@@ -110,7 +110,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 0.06692773, g: 0.23892389, b: 0.3018868, a: 1}
+    - _DeepColor: {r: 0.26486292, g: 0.5133974, b: 0.6037736, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShallowColor: {r: 0.65, g: 0.9, b: 1, a: 1}
