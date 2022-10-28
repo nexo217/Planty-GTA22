@@ -9,7 +9,10 @@ public class Fog : MonoBehaviour
 
     bool checkPlant = true;
 
-
+    void Start()
+    {
+        PlayerPrefs.SetInt("Nebelverdrangswert", 0);
+    }
 
     // Update is called once per frame
     void Update()

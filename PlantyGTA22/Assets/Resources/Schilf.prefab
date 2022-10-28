@@ -535,9 +535,9 @@ MonoBehaviour:
   canEarn: 0
   ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
     type: 3}
-  "nebelverdr\xE4ngung": 10
+  "nebelverdr\xE4ngung": 3
   maxGrowTime: 120
-  waterNeeded: 2
+  waterNeeded: 0.5
   spreadTime: 50
   minspreadRange: 4
   maxspreadRange: -4

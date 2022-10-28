@@ -47,7 +47,6 @@ public class PlantClone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("Nebelverdrangswert", 0);
 
         spawnSeeds = false;
 
