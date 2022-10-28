@@ -1290,9 +1290,21 @@ MonoBehaviour:
   - {fileID: 3288706049551058837}
   - {fileID: 3288706049791595526}
   - {fileID: 3288706049369327887}
+  currentType: 3
   waterGot: 0
   canEarn: 0
-  growTime: 1
+  growTime: 15
+  "nebelverdr\xE4ngung": 3
+  canSpread: 0
+  spreadTime: 0
+  minspreadRange: 0
+  maxspreadRange: 0
+  spreadCount: 0
+  SpawnPlantPrefab: 
+  seedName: Blume1
+  seedCount: 2
+  seedTime: 30
+  playerTag: GameController
 --- !u!1 &3288706048309915984
 GameObject:
   m_ObjectHideFlags: 0
