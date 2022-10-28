@@ -53,7 +53,7 @@
     <UnityVersion>2021.3.9f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Plant.cs" />
@@ -62,7 +62,6 @@
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Eric\PlantClone.cs" />
     <Compile Include="Assets\Scripts\AutoDestroy.cs" />
-    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\ItemChange.cs" />
     <Compile Include="Assets\Scripts\Watering.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\HandsHolder.cs" />
@@ -77,8 +76,8 @@
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\Eric\PlantPlaceholder.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
-    <Compile Include="Assets\Scripts\WaterRefill.cs" />
-    <Compile Include="Assets\Scripts\MessageForTeam.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Eric\Fog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\Shader\Triplanar.shader" />
@@ -351,12 +350,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -888,6 +881,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.Editor.csproj">
+      <Project>{059F7727-2120-FB9B-F66B-545735FB4D80}</Project>
+      <Name>Unity.PlayerPrefsEditor.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.Samples.SampleScene.csproj">
+      <Project>{988F35ED-42D8-108A-E384-D5E5EE59C0AF}</Project>
+      <Name>Unity.PlayerPrefsEditor.Samples.SampleScene</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.EditorResources.csproj">
+      <Project>{AC30FC84-9E2C-9A1F-E4FC-D06F02D63A12}</Project>
+      <Name>Unity.PlayerPrefsEditor.EditorResources</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -543,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &58073880
 Transform:
   m_ObjectHideFlags: 0
@@ -16294,7 +16294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &321331943
 Transform:
   m_ObjectHideFlags: 0
@@ -21732,7 +21732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &439593993
 Transform:
   m_ObjectHideFlags: 0
@@ -43256,7 +43256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &921618948
 Transform:
   m_ObjectHideFlags: 0
@@ -43608,7 +43608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1088232790
 Transform:
   m_ObjectHideFlags: 0
@@ -63979,7 +63979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1336624463
 Transform:
   m_ObjectHideFlags: 0
@@ -69258,7 +69258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1481510233
 Transform:
   m_ObjectHideFlags: 0
@@ -81439,3 +81439,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9e6a8de9e6e264c98e5144f0196fc8, type: 3}
+--- !u!1 &8752372668936608359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8752372670748997091, guid: ef9e6a8de9e6e264c98e5144f0196fc8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8752372668936608358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8752372668936608360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752372668936608359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde9b863a858e3a45a0b5d6e173e7a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nebelverdrangswert: 0
