@@ -67,7 +67,7 @@ public class PlantClone : MonoBehaviour
         growTimePerType = maxGrowTime / PlantsTypes.Length;
 
         viewpoint = Instantiate(ViewpointPrefab, transform.position, transform.rotation).GetComponent<Viewpoint>();
-        viewpoint.PointText = "Pour!";
+        viewpoint.PointText = "Water needed";
         PlantsTypes[currentType].SetActive(true);
     }
 
@@ -81,7 +81,7 @@ public class PlantClone : MonoBehaviour
         if (watered == true)
         {
             Invoke("Evolve", growTimePerType);
-            viewpoint.PointText = "Grows";
+            viewpoint.PointText = "Growing";
             watered = false;
         }
         if (spawnSeeds)

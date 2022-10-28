@@ -730,7 +730,7 @@ MonoBehaviour:
     type: 3}
   "nebelverdr\xE4ngung": 5
   maxGrowTime: 40
-  waterNeeded: 1
+  waterNeeded: 0.2
   spreadTime: 10
   minspreadRange: 4
   maxspreadRange: -4
