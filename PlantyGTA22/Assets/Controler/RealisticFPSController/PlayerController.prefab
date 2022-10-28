@@ -1298,7 +1298,7 @@ MonoBehaviour:
   Items: {fileID: 4434987455403460021}
   walkingSpeed: 3
   CroughSpeed: 1
-  RuningSpeed: 4
+  RuningSpeed: 7
   jumpSpeed: 6
   lookSpeed: 2
   lookXLimit: 80
@@ -1380,9 +1380,11 @@ MonoBehaviour:
   - {fileID: 2438310784659235490, guid: ea7d5c67147e9fc4f9c79c9fc15c0abc, type: 3}
   - {fileID: 1980724281033199137, guid: 791c9967f8e9edc43aab12a303e646dd, type: 3}
   - {fileID: 6193774900238000219, guid: af48e47d3933b384cb34b8e86adc09a2, type: 3}
+  SeedItemCount: 
   SeedItemIdInt: 0
   MaxSeedItems: 0
   DefiniteHide: 0
+  seedCountText: {fileID: 0}
 --- !u!114 &1400153138
 MonoBehaviour:
   m_ObjectHideFlags: 0
