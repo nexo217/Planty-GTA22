@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa70f9f2bf770944bbf76d1c544bea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Shovel: {fileID: 0}
   radius: 0.05
 --- !u!114 &191339253
 MonoBehaviour:
@@ -293,7 +294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2261800068882475504
 Transform:
   m_ObjectHideFlags: 0
@@ -1261,7 +1262,7 @@ CharacterController:
   m_Height: 2.2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.56
+  m_StepOffset: 0.5
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -1372,6 +1373,8 @@ MonoBehaviour:
   cam: {fileID: 4582019822591254233}
   canPlant: 1
   canEarn: 1
+  handAnimator: {fileID: 4434987455181619956}
+  Shovel: {fileID: 1452507092463252298}
 --- !u!1 &4897428817261270539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WaterCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010284997985239049, guid: 357bc2a77aab4b848b7d6813d73d74d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 357bc2a77aab4b848b7d6813d73d74d8, type: 3}

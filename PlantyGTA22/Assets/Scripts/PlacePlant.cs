@@ -10,19 +10,27 @@ public class PlacePlant : MonoBehaviour
     public bool canPlant;
     public bool canEarn;
     Inventory inventory;
+    public Animator handAnimator;
+    PlayerController playerController;
+    public GameObject Shovel;
 
 
     private void Start()
     {
         inventory = GetComponent<Inventory>();
+        playerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canPlant && Input.GetMouseButtonDown(1) && debugTransform.transform.localPosition.z < 2.6)
+        if (canPlant && Input.GetMouseButtonDown(1) && Shovel.active && debugTransform.transform.localPosition.z < 2.6)
         {
-            Plant();
+            handAnimator.SetBool("Plant", true);
+            Invoke("Plant", 2.2f);
+            playerController.canMove = false;
+            playerController.lookSpeed = 0;
+            canPlant = false;
         }
 
         if(canEarn && Input.GetMouseButtonDown(0))
@@ -43,6 +51,10 @@ public class PlacePlant : MonoBehaviour
 
     public void Plant()
     {
+        playerController.canMove = true;
+        playerController.lookSpeed = 2;
+        handAnimator.SetBool("Plant", false);
+        canPlant = true;
         GameObject plant = Instantiate(inventory.SeedItemPrefabs[inventory.SeedItemIdInt], debugTransform.transform.position, debugTransform.transform.rotation);
     }
 }

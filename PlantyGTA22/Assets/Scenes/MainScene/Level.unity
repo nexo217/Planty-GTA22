@@ -547,6 +547,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8057501147149997060, guid: 2b75067fd2b0b06488b922a2fe335738,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057501147149997060, guid: 2b75067fd2b0b06488b922a2fe335738,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b75067fd2b0b06488b922a2fe335738, type: 3}
 --- !u!1 &593995370
@@ -662,6 +672,11 @@ PrefabInstance:
       propertyPath: SeedItemCanvasText
       value: 
       objectReference: {fileID: 1353399350}
+    - target: {fileID: 1376103382, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
+      propertyPath: SeedItemPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8856187753692263559, guid: e379259c56a832347adad91e4cb20600,
+        type: 3}
     - target: {fileID: 1966169855, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
       propertyPath: waterCanSlider
       value: 
