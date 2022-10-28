@@ -1038,11 +1038,11 @@ MonoBehaviour:
   canEarn: 0
   ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
     type: 3}
-  maxGrowTime: 2
+  maxGrowTime: 60
   fruitCount: 2
-  fruitGrowTime: 1
+  fruitGrowTime: 20
   waterNeeded: 0.5
-  spreadTime: 5.2
+  spreadTime: 400
   minspreadRange: 2
   maxspreadRange: 5
   spreadCount: 2

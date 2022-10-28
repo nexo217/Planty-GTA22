@@ -413,6 +413,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &399327149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6055639990987491876, guid: 2b75067fd2b0b06488b922a2fe335738,
+    type: 3}
+  m_PrefabInstance: {fileID: 583675651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &583675651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -568,6 +580,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &681017028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4512965442133340396, guid: 2b75067fd2b0b06488b922a2fe335738,
+    type: 3}
+  m_PrefabInstance: {fileID: 583675651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &735609826 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4582019824381016672, guid: a01c7516e659bdf4b9897ab54df69b69,
@@ -611,6 +635,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353399350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1359198799037925871, guid: 2b75067fd2b0b06488b922a2fe335738,
+    type: 3}
+  m_PrefabInstance: {fileID: 583675651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1495988077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -618,10 +654,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1400153138, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
-      propertyPath: hitLayer.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
+    - target: {fileID: 1376103382, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
+      propertyPath: SeedItemCanvasLogo
+      value: 
+      objectReference: {fileID: 681017028}
+    - target: {fileID: 1376103382, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
+      propertyPath: SeedItemCanvasText
+      value: 
+      objectReference: {fileID: 1353399350}
+    - target: {fileID: 1966169855, guid: a01c7516e659bdf4b9897ab54df69b69, type: 3}
+      propertyPath: waterCanSlider
+      value: 
+      objectReference: {fileID: 399327149}
     - target: {fileID: 4434987455403460021, guid: a01c7516e659bdf4b9897ab54df69b69,
         type: 3}
       propertyPath: ItemCanvasLogo

@@ -7,7 +7,7 @@ public class Watering : MonoBehaviour
     public WaterCan waterCanScript;
     public float radius = 2;
 
-    private void Update()
+    private void FixedUpdate()
     {
         Water();
     }
@@ -22,7 +22,7 @@ public class Watering : MonoBehaviour
             Plant plant = hit.GetComponent<Plant>();           
             if (plant != null && waterCanScript.watering && waterCanScript.gameObject.active)
             {
-                    plant.waterGot += 0.001f;
+                plant.waterGot += 0.001f;
             }          
         }
     }
