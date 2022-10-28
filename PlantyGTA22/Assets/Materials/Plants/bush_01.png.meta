@@ -113,6 +113,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,7 +137,7 @@ TextureImporter:
         width: 2
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,12 +150,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: busch1_1
+      name: bush_01_0
       rect:
         serializedVersion: 2
-        x: 65
+        x: 0
         y: 0
-        width: 31
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4e441332b435d3429a6d5fa37858a91
-      internalID: -507964471
+      spriteID: 8b2589e3a78cc4e4299901d469cd79e4
+      internalID: 1129318558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: busch1_2
+      name: bush_01_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 32
         y: 0
-        width: 31
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c697d3a5d855684db340666c86a4200
-      internalID: 624906421
+      spriteID: 49c7120cb9c3a4148828a0de39751b7e
+      internalID: 1577048268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: busch1_3
+      name: bush_01_2
       rect:
         serializedVersion: 2
-        x: 36
+        x: 64
         y: 0
-        width: 15
-        height: 19
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +206,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4505c3fbf02cd446912cb534c93c8a1
-      internalID: -870302712
+      spriteID: 7318ec48d5473ac4685866fc64f3eaba
+      internalID: -1775938562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_01_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799fe6c57ee5d2846af8fb79ce55d4cc
+      internalID: -38620066
       vertices: []
       indices: 
       edges: []
@@ -212,9 +245,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       busch1_1: -507964471
+      bush_01_3: -38620066
       busch1_3: -870302712
       busch1_2: 624906421
       busch1_0: 1543541299
+      bush_01_2: -1775938562
+      bush_01_0: 1129318558
+      bush_01_1: 1577048268
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
