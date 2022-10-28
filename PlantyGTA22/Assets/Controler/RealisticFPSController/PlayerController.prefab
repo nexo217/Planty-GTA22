@@ -2306,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 8010284996351549496, guid: 357bc2a77aab4b848b7d6813d73d74d8,
         type: 3}
       propertyPath: waterConsumption
-      value: 0.01
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 8010284996945278160, guid: 357bc2a77aab4b848b7d6813d73d74d8,
         type: 3}
