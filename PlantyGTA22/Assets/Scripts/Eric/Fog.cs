@@ -28,7 +28,7 @@ public class Fog : MonoBehaviour
     {
         Debug.Log("cHECK");
         checkPlant = false;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
         if (PlayerPrefs.GetInt("Nebelverdrangswert", 0) >= Nebelverdrangswert)
         {
             Debug.Log("deaktivatwe");
