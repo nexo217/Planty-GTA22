@@ -23402,7 +23402,7 @@ BoxCollider:
   m_GameObject: {fileID: 8856187753692263559}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.09, z: 1}
   m_Center: {x: 0, y: -0.08, z: 0}
@@ -23414,7 +23414,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8856187753692263559}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.9, z: 0.5}
@@ -23441,6 +23441,7 @@ MonoBehaviour:
   canEarn: 0
   ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
     type: 3}
+  "nebelverdr\xE4ngung": 0
   maxGrowTime: 60
   waterNeeded: 0.5
   spreadTime: 30
@@ -23448,6 +23449,10 @@ MonoBehaviour:
   maxspreadRange: 10
   spreadCount: 10
   SpawnPlantPrefab: Blume1_P
+  seedName: 
+  seedCount: 0
+  seedTime: 0
+  playerTag: GameController
 --- !u!1 &8856187753693840404
 GameObject:
   m_ObjectHideFlags: 0

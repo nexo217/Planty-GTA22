@@ -26,6 +26,8 @@ public class PlantClone : MonoBehaviour
     //private int fruitCount;
     //public float fruitGrowTime;
     public float waterNeeded;
+
+    [Header("Spreading")]
     public float spreadTime;
     public float minspreadRange;
     public float maxspreadRange;
@@ -33,9 +35,19 @@ public class PlantClone : MonoBehaviour
     public int spreadCount;
     public string SpawnPlantPrefab;
 
+    [Header("Seeds")]
+    public string seedName;
+    public int seedCount;
+    public int seedTime;
+    public string playerTag = "GameController";
+    
+    bool spawnSeeds;
+    bool collectSeeds;
+
     // Start is called before the first frame update
     void Start()
     {
+        spawnSeeds = false;
 
         //gets to the ground
         Ray ray = new Ray(transform.position, -Vector3.up);
@@ -71,6 +83,10 @@ public class PlantClone : MonoBehaviour
             viewpoint.PointText = "Grows";
             watered = false;
         }
+        if (spawnSeeds)
+        {
+            StartCoroutine("SpawnSeeds");
+        }
 
         RandomFlipValue();
     }
@@ -99,6 +115,7 @@ public class PlantClone : MonoBehaviour
             {
                 //Invoke("SpawnFruits", fruitGrowTime);
                 StartCoroutine("SpawnPlants");
+                spawnSeeds = true;
                 finishedGrowing = true;
             }
         }
@@ -176,6 +193,23 @@ public class PlantClone : MonoBehaviour
 
                 Instantiate(Resources.Load(SpawnPlantPrefab), spawn_position, rotation);
             }
+        }
+    }
+
+    IEnumerator SpawnSeeds()
+    {
+        spawnSeeds = false;
+        yield return new WaitForSeconds(seedTime);
+        collectSeeds = true;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == playerTag)
+        {
+            PlayerPrefs.SetInt(seedName, PlayerPrefs.GetInt(seedName, 0) + seedCount);
+            collectSeeds = false;
+            spawnSeeds = true;
         }
     }
 }

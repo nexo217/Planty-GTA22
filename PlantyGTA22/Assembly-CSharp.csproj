@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\EarnPlant.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\HeadBob.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Eric\PlantClone.cs" />
     <Compile Include="Assets\Scripts\AutoDestroy.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\ItemChange.cs" />
     <Compile Include="Assets\Scripts\Watering.cs" />
@@ -73,9 +74,8 @@
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\TextWriter.cs" />
     <Compile Include="Assets\Scripts\PlacePlant.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
-    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
-    <Compile Include="Assets\Scripts\Eric\PlantClone.cs" />
     <Compile Include="Assets\Scripts\Eric\PlantPlaceholder.cs" />
+    <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\Shader\Triplanar.shader" />
@@ -715,6 +715,9 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
@@ -772,6 +775,9 @@
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
@@ -783,6 +789,9 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
@@ -867,15 +876,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Recorder.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Recorder">
-      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Recorder.Base">
-      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
