@@ -9,9 +9,9 @@ public class Inventory : MonoBehaviour
     [SerializeField] Image SeedItemCanvasLogo;
     [SerializeField] Text SeedItemCanvasText;
     [SerializeField] bool LoopItems = true;
-    [SerializeField, Tooltip("These strings must have the same order as the logos.")] string[] SeedItemName;
-    [SerializeField, Tooltip("These logos must have the same order as the strings.")] Sprite[] SeedItemLogos;
-    [SerializeField, Tooltip("These prefabs must have the same order as the strings and logos.")] public GameObject[] SeedItemPrefabs;
+    [SerializeField, Tooltip("These strings must have the same order as the logos.")] List<string> SeedItemName;
+    [SerializeField, Tooltip("These logos must have the same order as the strings.")] List<Sprite> SeedItemLogos;
+    [SerializeField, Tooltip("These prefabs must have the same order as the strings and logos.")] public List<GameObject> SeedItemPrefabs;
     [SerializeField] public int SeedItemIdInt;
     int MaxSeedItems;
     int ChangeSeedItemInt;
@@ -25,7 +25,7 @@ public class Inventory : MonoBehaviour
         SeedItemCanvasLogo.color = OpacityColor;
         SeedItemChangeLogo = false;
         DefiniteHide = false;
-        MaxSeedItems = SeedItemLogos.Length - 1;
+        MaxSeedItems = SeedItemLogos.Count - 1;
         ChangeSeedItemInt = SeedItemIdInt;
         SeedItemCanvasLogo.sprite = SeedItemLogos[SeedItemIdInt];
         StartCoroutine(ItemChangeObject());

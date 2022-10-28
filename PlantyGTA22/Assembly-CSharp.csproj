@@ -118,6 +118,7 @@
     <Compile Include="Assets\Particles\Fog\Materials\Volumetric Lights\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\Scripts\Eric\Fog2.cs" />
     <Compile Include="Assets\Particles\Fog\Materials\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
+    <Compile Include="Assets\Scripts\CollectablePlant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
