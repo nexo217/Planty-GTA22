@@ -23441,7 +23441,7 @@ MonoBehaviour:
   canEarn: 0
   ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
     type: 3}
-  "nebelverdr\xE4ngung": 0
+  "nebelverdr\xE4ngung": 3
   maxGrowTime: 60
   waterNeeded: 0.5
   spreadTime: 30
@@ -23449,9 +23449,9 @@ MonoBehaviour:
   maxspreadRange: 10
   spreadCount: 10
   SpawnPlantPrefab: Blume1_P
-  seedName: 
-  seedCount: 0
-  seedTime: 0
+  seedName: Blume1
+  seedCount: 2
+  seedTime: 30
   playerTag: GameController
 --- !u!1 &8856187753693840404
 GameObject:
