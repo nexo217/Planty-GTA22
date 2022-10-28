@@ -30,6 +30,7 @@ public class Plant : MonoBehaviour
     public float maxspreadRange;
     //how many times can spread
     public int spreadCount;
+    public string SpawnPlantPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -129,7 +130,7 @@ public class Plant : MonoBehaviour
         {
             Vector3 position = transform.position + new Vector3(Random.Range(minspreadRange, maxspreadRange) * randomValue, 0, Random.Range(minspreadRange, maxspreadRange) * randomValue);
             Quaternion rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
-            Instantiate(Resources.Load("Plant1"), position, rotation);
+            Instantiate(Resources.Load(SpawnPlantPrefab), position, rotation);
         }        
         for (int i = 0; i < fruits.Count; i++)
         {
