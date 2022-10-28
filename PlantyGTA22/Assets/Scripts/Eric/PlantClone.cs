@@ -209,6 +209,8 @@ public class PlantClone : MonoBehaviour
         if (other.tag == playerTag && collectSeeds)
         {
             PlayerPrefs.SetInt(seedName, PlayerPrefs.GetInt(seedName, 0) + seedCount);
+            Inventory inventory = other.GetComponent<Inventory>();
+            inventory.SeedItemCount[inventory.SeedItemIdInt] += seedCount;
             collectSeeds = false;
             spawnSeeds = true;
         }

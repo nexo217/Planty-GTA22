@@ -9,14 +9,17 @@ public class Inventory : MonoBehaviour
     [SerializeField] Image SeedItemCanvasLogo;
     [SerializeField] Text SeedItemCanvasText;
     [SerializeField] bool LoopItems = true;
-    [SerializeField, Tooltip("These strings must have the same order as the logos.")] List<string> SeedItemName;
-    [SerializeField, Tooltip("These logos must have the same order as the strings.")] List<Sprite> SeedItemLogos;
+    [SerializeField, Tooltip("These strings must have the same order as the logos.")] public List<string> SeedItemName;
+    [SerializeField, Tooltip("These logos must have the same order as the strings.")] public List<Sprite> SeedItemLogos;
     [SerializeField, Tooltip("These prefabs must have the same order as the strings and logos.")] public List<GameObject> SeedItemPrefabs;
+    [SerializeField, Tooltip("These ints must have the same order as the strings, prefabs and logos.")] public List<int> SeedItemCount;
     [SerializeField] public int SeedItemIdInt;
-    int MaxSeedItems;
+    [HideInInspector] public int MaxSeedItems;
     int ChangeSeedItemInt;
     [HideInInspector] public bool DefiniteHide;
     bool SeedItemChangeLogo;
+
+    public Text seedCountText;
 
     private void Start()
     {
@@ -53,6 +56,8 @@ public class Inventory : MonoBehaviour
             ChangeSeedItemInt = SeedItemIdInt;
             StartCoroutine(ItemChangeObject());
         }
+
+        seedCountText.text = SeedItemCount[SeedItemIdInt].ToString();
     }
 
     IEnumerator ItemChangeObject()
