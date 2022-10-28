@@ -10,14 +10,14 @@ using UnityEngine.UI;
         [Space, SerializeField] Camera cam;
         [SerializeField] GameObject PlayerController;
         [SerializeField] Image ImagePrefab;
-        [Space ,SerializeField, Range(0.1f, 20)] float MaxViewRange = 8;
-        [SerializeField, Range(0.1f, 20)] float MaxTextViewRange = 3;
+        [Space ,SerializeField, Range(0.1f, 20)] public float MaxViewRange = 8;
+        [SerializeField, Range(0.1f, 20)] public float MaxTextViewRange = 3;
         float Distance;
         Text ImageText;
         Image ImageUI;
         void Start()
         {
-            cam = GameObject.Find("Camera").GetComponent<Camera>();
+            cam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
             PlayerController = GameObject.Find("PlayerController");
             ImageUI = Instantiate(ImagePrefab, FindObjectOfType<Canvas>().transform).GetComponent<Image>();
             ImageText = ImageUI.GetComponentInChildren<Text>();

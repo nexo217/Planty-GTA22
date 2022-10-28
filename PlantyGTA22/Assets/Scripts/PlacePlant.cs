@@ -24,7 +24,7 @@ public class PlacePlant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canPlant && Input.GetMouseButtonDown(1) && Shovel.active && debugTransform.transform.localPosition.z < 2.6)
+        if (canPlant && Input.GetMouseButtonDown(1) && inventory.SeedItemCount[inventory.SeedItemIdInt] > 0 && Shovel.active && debugTransform.transform.localPosition.z < 2.6)
         {
             handAnimator.SetBool("Plant", true);
             Invoke("Plant", 2.2f);
@@ -51,6 +51,7 @@ public class PlacePlant : MonoBehaviour
 
     public void Plant()
     {
+        inventory.SeedItemCount[inventory.SeedItemIdInt] -= 1;
         playerController.canMove = true;
         playerController.lookSpeed = 2;
         handAnimator.SetBool("Plant", false);
