@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace EvolveGames
-{
     public class ItemChange : MonoBehaviour
     {
         [Header("Item Change")]
@@ -108,4 +106,4 @@ namespace EvolveGames
         }
     }
 
-}
+
