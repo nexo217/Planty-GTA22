@@ -120,6 +120,7 @@
     <Compile Include="Assets\Particles\Fog\Materials\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
     <Compile Include="Assets\Scripts\CollectablePlant.cs" />
     <Compile Include="Assets\Scripts\PopupWindow.cs" />
+    <Compile Include="Assets\CollectableOrder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

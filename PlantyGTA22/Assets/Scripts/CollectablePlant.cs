@@ -14,14 +14,16 @@ public class CollectablePlant : MonoBehaviour
     public Sprite logo;
     public string name;
     public int seedCount;
+    CollectableOrder order;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        order = GameObject.Find("PlayerController").GetComponent<CollectableOrder>();
         viewpoint = Instantiate(ViewpointPrefab, transform.position, transform.rotation).GetComponent<Viewpoint>();
-        viewpoint.MaxTextViewRange = 40;
-        viewpoint.MaxViewRange = 40;
+        viewpoint.MaxTextViewRange = 10;
+        viewpoint.MaxViewRange = 10;
         viewpoint.PointText = "Collectable";
     }
 
@@ -29,6 +31,7 @@ public class CollectablePlant : MonoBehaviour
     {
         if(other.tag == "GameController")
         {
+            order.NextCollectable();
             Inventory inventory = other.GetComponent<Inventory>();
             inventory.SeedItemPrefabs.Add(prefab);
             inventory.SeedItemLogos.Add(logo);
