@@ -62,7 +62,6 @@
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Eric\PlantClone.cs" />
     <Compile Include="Assets\Scripts\AutoDestroy.cs" />
-    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\ItemChange.cs" />
     <Compile Include="Assets\Scripts\Watering.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\HandsHolder.cs" />
@@ -77,6 +76,7 @@
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\Eric\PlantPlaceholder.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\Shader\Triplanar.shader" />
