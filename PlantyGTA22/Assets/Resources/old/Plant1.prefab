@@ -979,6 +979,7 @@ GameObject:
   - component: {fileID: 2593948006996868643}
   - component: {fileID: 4435525327256751080}
   - component: {fileID: 5916156277353746887}
+  - component: {fileID: -3643986369282011190}
   m_Layer: 8
   m_Name: Plant1
   m_TagString: Untagged
@@ -1012,7 +1013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7070106045809607801}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cefd8c88001deb14b9ead3a363d6fd04, type: 3}
   m_Name: 
@@ -1038,14 +1039,15 @@ MonoBehaviour:
   canEarn: 0
   ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
     type: 3}
-  maxGrowTime: 60
+  maxGrowTime: 2
   fruitCount: 2
-  fruitGrowTime: 20
+  fruitGrowTime: 1
   waterNeeded: 0.5
-  spreadTime: 400
-  minspreadRange: 2
-  maxspreadRange: 5
+  spreadTime: 0
+  minspreadRange: 5
+  maxspreadRange: 12
   spreadCount: 2
+  SpawnPlantPrefab: Cube
 --- !u!65 &5916156277353746887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1059,6 +1061,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.9, z: 0.5}
   m_Center: {x: 0, y: 0.45, z: 0}
+--- !u!114 &-3643986369282011190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070106045809607801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029a6c0b523a43d4d8cbbbeb58513489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlantsTypes:
+  - {fileID: 8119200034477498055}
+  - {fileID: 46527641396404000}
+  - {fileID: 6714265832643843094}
+  - {fileID: 4310276083718211077}
+  waterGot: 0
+  canEarn: 0
+  ViewpointPrefab: {fileID: 6015494009074285039, guid: edede5b8a0ab40848bcc91cfa7c35cb4,
+    type: 3}
+  maxGrowTime: 2
+  waterNeeded: 0.5
+  spreadTime: 0
+  minspreadRange: -12
+  maxspreadRange: 12
+  spreadCount: 2
+  SpawnPlantPrefab: Cube
 --- !u!1 &7231573072165368061
 GameObject:
   m_ObjectHideFlags: 0
