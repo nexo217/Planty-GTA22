@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EarnPlant : MonoBehaviour
 {
+    public GameObject Shovel;
     public float radius = 2;
 
     public void Earn()
@@ -16,7 +17,7 @@ public class EarnPlant : MonoBehaviour
             Plant plant = hit.GetComponent<Plant>();
             if (plant != null)
             {
-                if (plant.canEarn)
+                if (plant.canEarn && Shovel.active)
                 {
                     plant.DestroyPlant();
                 }

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace EvolveGames
-{
     public class ItemChange : MonoBehaviour
     {
         [Header("Item Change")]
@@ -34,12 +32,12 @@ namespace EvolveGames
         }
         private void Update()
         {
-            if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 ItemIdInt++;
             }
 
-            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 ItemIdInt--;
             }
@@ -108,4 +106,4 @@ namespace EvolveGames
         }
     }
 
-}
+
