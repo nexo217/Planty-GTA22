@@ -35,6 +35,8 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        SetQuality(5);
     }
 
     public void LoadScene(string SceneName)
