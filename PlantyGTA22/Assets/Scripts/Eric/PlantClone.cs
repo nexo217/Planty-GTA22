@@ -205,7 +205,7 @@ public class PlantClone : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == playerTag)
+        if (other.tag == playerTag && collectSeeds)
         {
             PlayerPrefs.SetInt(seedName, PlayerPrefs.GetInt(seedName, 0) + seedCount);
             collectSeeds = false;

@@ -34,9 +34,19 @@ public class PlantPlaceholder : MonoBehaviour
     public int spreadCount;
     public string SpawnPlantPrefab;
 
+    [Header("Seeds")]
+    public string seedName;
+    public int seedCount;
+    public int seedTime;
+    public string playerTag = "GameController";
+
+    bool spawnSeeds;
+    bool collectSeeds;
+
     // Start is called before the first frame update
     void Start()
     {
+        spawnSeeds = false;
 
         //gets to the ground
         Ray ray = new Ray(transform.position, -Vector3.up);
@@ -67,6 +77,11 @@ public class PlantPlaceholder : MonoBehaviour
         //watered = false;
 
         //RandomFlipValue();
+
+        if (spawnSeeds)
+        {
+            StartCoroutine("SpawnSeeds");
+        }
     }
 
     IEnumerator Evolve()
@@ -83,6 +98,8 @@ public class PlantPlaceholder : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("Nebelverdrangswert", PlayerPrefs.GetInt("Nebelverdrangswert", 0) + nebelverdrängung);
+
+        spawnSeeds = true;
 
         if (canSpread)
         {
@@ -175,6 +192,23 @@ public class PlantPlaceholder : MonoBehaviour
 
                Instantiate(Resources.Load(SpawnPlantPrefab), spawn_position, rotation);
             }
+        }
+    }
+
+    IEnumerator SpawnSeeds()
+    {
+        spawnSeeds = false;
+        yield return new WaitForSeconds(seedTime);
+        collectSeeds = true;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == playerTag && collectSeeds)
+        {
+            PlayerPrefs.SetInt(seedName, PlayerPrefs.GetInt(seedName, 0) + seedCount);
+            collectSeeds = false;
+            spawnSeeds = true;
         }
     }
 }
