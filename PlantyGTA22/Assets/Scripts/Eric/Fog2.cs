@@ -33,7 +33,6 @@ public class Fog2 : MonoBehaviour
 
     IEnumerator Check()
     {
-        Debug.Log("cHECK");
         checkPlant = false;
         yield return new WaitForSeconds(1);
         plantCount = PlayerPrefs.GetInt("Nebelverdrangswert", 0);

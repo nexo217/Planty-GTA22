@@ -115,12 +115,18 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Controler\RealisticFPSController\Scripts\Viewpoint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Particles\Fog\Materials\Volumetric Lights\Scripts\VolumetricLight.cs" />
+    <Compile Include="Assets\Scripts\Eric\Fog2.cs" />
+    <Compile Include="Assets\Particles\Fog\Materials\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Materials\Shader\Triplanar.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Particles\Fog\Materials\Volumetric Lights\Shaders\VolumetricLight.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Particles\Fog\Materials\Volumetric Lights\Shaders\BlitAdd.shader" />
+    <None Include="Assets\Particles\Fog\Materials\Volumetric Lights\Shaders\BilateralBlur.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
@@ -733,6 +739,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.Player.csproj">
+      <Project>{75CB0676-9336-5BE3-888D-D415A72440A1}</Project>
+      <Name>Assembly-CSharp-firstpass.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.Player.csproj">
       <Project>{8FDEED1B-9335-4963-FFD6-14850421A4F8}</Project>
       <Name>Unity.InternalAPIEngineBridge.001.Player</Name>
